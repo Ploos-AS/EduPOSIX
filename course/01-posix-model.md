@@ -12,7 +12,7 @@ Understand what POSIX adds to ISO C and how EduPOSIX classifies interfaces.
 
 ## First lab
 
-Build and run `examples/process-id/process-id.c`. Identify which included header and function come from POSIX rather than ISO C.
+Build and run `examples/getpid/getpid.c`. Identify which included header and function come from POSIX rather than ISO C.
 
 ## Checkpoint
 
