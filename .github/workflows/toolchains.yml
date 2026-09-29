@@ -1,0 +1,16 @@
+name: POSIX toolchains
+on:
+  push:
+  pull_request:
+jobs:
+  linux:
+    strategy:
+      matrix:
+        compiler: [gcc, clang]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and run POSIX examples
+        env:
+          CC: ${{ matrix.compiler }}
+        run: make clean check
