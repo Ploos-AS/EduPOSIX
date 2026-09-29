@@ -1,0 +1,57 @@
+schema_version: 1
+project: EduPOSIX
+author: Per Gustav Ousdal
+publisher: Ploos AS
+
+title:
+  nb: POSIX-systemprogrammering i C
+  en: POSIX Systems Programming in C
+
+subtitle:
+  nb: null
+  en: "Systems programming in C for POSIX, with Linux as the primary reference platform."
+
+edition: 1
+publication_year: 2026
+languages: [nb, en]
+
+formats:
+  web:
+    isbn: null
+  epub:
+    isbn:
+      nb: PENDING
+      en: PENDING
+  pdf:
+    isbn:
+      nb: PENDING
+      en: PENDING
+
+distribution:
+  amazon_kdp:
+    enabled: true
+    artifact: epub
+    asin: {nb: null, en: null}
+  kobo:
+    enabled: true
+    artifact: epub
+    product_id: {nb: null, en: null}
+  apple_books:
+    enabled: true
+    artifact: epub
+    product_id: {nb: null, en: null}
+  google_play_books:
+    enabled: true
+    artifact: epub
+    product_id: {nb: null, en: null}
+    optional_pdf: true
+
+copyright:
+  holder: Ploos AS
+  year: 2026
+
+license:
+  documentation: CC-BY-SA-4.0
+
+source:
+  repository: https://github.com/Ploos-AS/EduPOSIX
