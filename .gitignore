@@ -1,0 +1,8 @@
+build/
+dist/
+site/
+*.o
+*.a
+*.so
+*.out
+.DS_Store
