@@ -1,16 +1,16 @@
 CC ?= cc
 CFLAGS ?= -std=c17 -D_POSIX_C_SOURCE=200809L -Wall -Wextra -Wpedantic -Wconversion -Wshadow
 BUILD := build
-EXAMPLES := examples/process-id/process-id.c
+EXAMPLES := examples/getpid/getpid.c
 
 .PHONY: all check validate clean
-all: $(BUILD)/process-id
+all: $(BUILD)/getpid
 $(BUILD):
 	mkdir -p $(BUILD)
-$(BUILD)/process-id: $(EXAMPLES) | $(BUILD)
+$(BUILD)/getpid: $(EXAMPLES) | $(BUILD)
 	$(CC) $(CFLAGS) $< -o $@
 check: all validate
-	./$(BUILD)/process-id
+	./$(BUILD)/getpid
 clean:
 	rm -rf $(BUILD)
 
