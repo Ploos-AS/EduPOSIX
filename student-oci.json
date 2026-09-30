@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "contract": "PLOOS-STUDENT-OCI-1",
+  "course": "EduPOSIX",
+  "workspace": "/course",
+  "image": "ghcr.io/ploos-as/eduposix-student",
+  "target": "linux-posix",
+  "commands": {
+    "info": "student-env-info",
+    "check": "student-check"
+  },
+  "runtime": [
+    "docker",
+    "podman"
+  ],
+  "requires_private_infrastructure": false,
+  "restricted_payloads": false,
+  "release": {
+    "development_tag": "edge",
+    "immutable_tag_prefix": "sha-",
+    "semver": true
+  }
+}
