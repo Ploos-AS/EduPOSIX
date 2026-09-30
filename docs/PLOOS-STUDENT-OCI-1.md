@@ -11,4 +11,4 @@ Stable interface:
 
 The image must contain only redistributable dependencies, work with Docker and Podman, support non-interactive CI, and be versioned with published course releases. Labs requiring unusual Linux privileges must declare those privileges explicitly and must not silently weaken the base container.
 
-Canonical cross-course contract/reference implementation: EduC `docs/PLOOS-STUDENT-OCI-1.md`.
+Canonical cross-course contract: `Ploos-AS/publishing/standards/PLOOS-STUDENT-OCI-1.md`.
