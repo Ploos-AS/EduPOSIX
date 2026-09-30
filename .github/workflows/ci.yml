@@ -3,9 +3,15 @@ on:
   push:
   pull_request:
 jobs:
-  build:
+  host:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build and run POSIX examples
-        run: make check
+      - run: make check
+  student-oci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t eduposix-student:test .
+      - run: docker run --rm eduposix-student:test student-env-info
+      - run: docker run --rm -v "$PWD:/course" eduposix-student:test student-check
