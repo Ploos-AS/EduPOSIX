@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+printf '%s\n' 'PLOOS-STUDENT-OCI-1' 'course=EduPOSIX' 'workspace=/course' 'platform=Linux/POSIX'
+printf 'cc='; cc --version | head -n 1
+printf 'gcc='; gcc --version | head -n 1
+printf 'clang='; clang --version | head -n 1
+printf 'make='; make --version | head -n 1
+printf 'gdb='; gdb --version | head -n 1
+printf 'strace='; strace --version | head -n 1
